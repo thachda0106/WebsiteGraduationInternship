@@ -1,0 +1,129 @@
+.wrapper {
+	width: 100%;
+	height: var(--default-layout-header-height);
+	background-color: white;
+}
+.container {
+	width: var(--default-layout-header-container-width);
+	gap: 20px;
+}
+.categories {
+	border: 1px solid rgb(224, 224, 224);
+	cursor: pointer;
+	border-radius: 4px;
+	line-height: 1rem;
+	padding: 0.4rem 0.75rem;
+	text-align: center;
+	color: rgb(130, 134, 158);
+	padding: 6.4px 12px;
+	.icon {
+		height: 20px;
+		width: 20px;
+	}
+	span {
+		color: #82869e;
+		font-size: 14px;
+	}
+	&:hover {
+		background-color: rgb(245, 245, 245);
+	}
+}
+.search {
+	position: relative;
+	input {
+		width: 100%;
+		border: 1px solid #e0e0e0;
+		border-radius: 5px;
+		padding: 6px 12px;
+		font-size: 14px;
+		background-color: rgb(245, 245, 245);
+		color: rgb(51, 51, 51);
+	}
+	button {
+		position: absolute;
+		right: 2px;
+		background-color: #007aff;
+		border-radius: 5px;
+	}
+	.icon {
+		width: 30px;
+		height: 30px;
+		color: #fff;
+	}
+}
+.action {
+	.icon {
+		width: 36px;
+		height: 36px;
+		background-color: transparent;
+		color: rgb(130, 134, 158);
+	}
+	.text {
+		margin: 0px;
+		padding: 0px;
+		border-style: none;
+		border-radius: 0px;
+		border-width: 1px;
+		border-color: unset;
+		opacity: 1;
+		background-color: transparent;
+		color: rgb(130, 134, 158);
+		font-weight: 500;
+		text-decoration: unset;
+		font-size: 13px;
+		line-height: 20px;
+		overflow: hidden;
+	}
+
+	.info {
+		min-width: 170px;
+	}
+	.wrapper {
+		height: var(--default-layout-header-height);
+	}
+	.user,
+	.cart {
+		gap: 0.5rem;
+		min-width: 120px;
+		padding: 0.365rem 0.75rem;
+		height: 100%;
+		&:hover .text {
+			cursor: pointer;
+			color: rgb(20, 53, 195);
+		}
+		&:hover .icon {
+			cursor: pointer;
+			color: rgb(20, 53, 195);
+		}
+	}
+}
+.userInfo {
+	transform: translateY(-80px);
+	.item {
+		padding: 9.6px;
+
+		&:hover {
+			cursor: pointer;
+			background-color: rgb(245, 245, 245);
+		}
+	}
+	.icon-info {
+		width: 18px;
+		height: 18px;
+		margin: 0 9.6px;
+	}
+	.text {
+		color: #333333;
+		font-size: 14px;
+	}
+
+	.button {
+		width: 100%;
+		height: 30px;
+		background-color: rgb(20, 53, 195);
+	}
+}
+
+.categories-wrapper-popper {
+	transform: translateY(0px);
+}
